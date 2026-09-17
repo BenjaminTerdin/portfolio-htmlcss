@@ -12,6 +12,7 @@ function showPage(pageName) {
     document.body.dataset.page = pageName;
     navigation.classList.remove('is-open');
     menuToggle.classList.remove('is-open');
+    menuToggle.setAttribute('aria-label', 'Open navigation');
     menuToggle.setAttribute('aria-expanded', 'false');
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -27,6 +28,7 @@ pageLinks.forEach((link) => {
 menuToggle.addEventListener('click', () => {
     const isOpen = navigation.classList.toggle('is-open');
     menuToggle.classList.toggle('is-open', isOpen);
+    menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
     menuToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
