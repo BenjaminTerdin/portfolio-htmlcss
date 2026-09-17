@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benter is a frontend developer crafting clear, expressive digital experiences.">
+    <title>Benter / Digital portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+    <div class="site-shell">
+        <header class="topbar">
+            <a class="wordmark" href="#home" aria-label="Benter home">benter<span>.</span></a>
+            <p class="descriptor">frontend developer<br>based in accra</p>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                <span></span><span></span>
+            </button>
+        </header>
+
+        <aside class="contact-rail">
+            <div>
+                <p class="rail-label">Available for<br>select projects</p>
+                <a href="mailto:hello@benter.dev" class="rail-link">hello@benter.dev</a>
+                <a href="tel:+233000000000" class="rail-link">+233 00 000 0000</a>
+            </div>
+            <div class="rail-bottom">
+                <a href="https://github.com" target="_blank" rel="noreferrer">github</a>
+                <a href="https://linkedin.com" target="_blank" rel="noreferrer">linkedin</a>
+            </div>
+        </aside>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a class="nav-item is-active" href="#home" data-page-link="home"><span>01</span><strong>home</strong></a>
+            <a class="nav-item" href="#projects" data-page-link="projects"><span>02</span><strong>projects</strong></a>
+            <a class="nav-item" href="#about" data-page-link="about"><span>03</span><strong>about</strong></a>
+            <a class="nav-item" href="#contact" data-page-link="contact"><span>04</span><strong>contact</strong></a>
+        </nav>
+
+        <!-- Main content -->
+        <main>  <!-- Home page -->
+            <section class="page page-home is-visible" data-page="home" aria-labelledby="home-title">
+                <div class="page-index">01 / 04</div>
+                <p class="eyebrow">Independent digital maker</p>
+                <h1 id="home-title">Ideas into<br><em>interfaces.</em></h1>
+                <div class="home-footer">
+                    <p>I design and build thoughtful websites<br>for people with something to say.</p>
+                    <a class="round-link" href="#projects" data-page-link="projects" aria-label="View projects">↗</a>
+                </div>
+            </section>
+
+                <!-- Projects page -->
+            <section class="page page-projects" data-page="projects" aria-labelledby="projects-title">
+                <div class="page-index">02 / 04</div>
+                <p class="eyebrow">Selected work / 2023—2026</p>
+                <h2 id="projects-title">Selected<br><em>projects.</em></h2>
+                <div class="project-list">
+                    <a class="project-row" href="#contact" data-page-link="contact"><span>01</span><strong>Form & function</strong><small>Brand / Web</small><b>↗</b></a>
+                    <a class="project-row" href="#contact" data-page-link="contact"><span>02</span><strong>Northstar studio</strong><small>Creative direction / Web</small><b>↗</b></a>
+                    <a class="project-row" href="#contact" data-page-link="contact"><span>03</span><strong>Field notes</strong><small>Editorial / Development</small><b>↗</b></a>
+                </div>
+            </section>
+
+                <!-- About page -->
+            <section class="page page-about" data-page="about" aria-labelledby="about-title">
+                <div class="page-index">03 / 04</div>
+                <p class="eyebrow">A little context</p>
+                <h2 id="about-title">Make it<br><em>matter.</em></h2>
+                <div class="about-copy">
+                    <p>I’m Benter, a frontend developer who cares about the space between a good idea and the person experiencing it.</p>
+                    <p>My work combines sharp visual thinking with accessible, dependable code. I like calm systems, honest interactions, and details that earn their place.</p>
+                </div>
+                <div class="skill-line"><span>Currently exploring</span><strong>Design systems · Creative coding · The web</strong></div>
+            </section>
+                
+                <!-- Contact page -->
+            <section class="page page-contact" data-page="contact" aria-labelledby="contact-title">
+                <div class="page-index">04 / 04</div>
+                <p class="eyebrow">Have a good one?</p>
+                <h2 id="contact-title">Let’s make<br><em>something.</em></h2>
+                <a class="email-link" href="mailto:hello@benter.dev">hello@benter.dev <span>↗</span></a>
+                <p class="contact-note">For collaborations, freelance work, or just to say hello.<br>I usually reply within a day or two.</p>
+            </section>
+        </main>
+
+        <footer class="footer"><span>© 2026 Benter</span><span>Scroll / click to explore</span></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
